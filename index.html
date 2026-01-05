@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 1 Jimenez</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<style>
+   body{
+    font-family: 'Comic Sans MS', monospace;
+    background-color: #f8e9d7; 
+    background-image: url(capyy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    max-width: 400px;
+    margin: auto ;
+    border: 5px solid #643a03;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+
+}
+
+h2{ 
+    text-align: center;
+    color: #9e663c; 
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px; 
+    font-size: 16px;
+    background-color: #ffffff; 
+    color:  #9e663c; 
+}
+
+button {
+    width: 100%;
+    padding: 10px; 
+    background-color:#ee8b8b ; 
+    color: white;
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+button:hover{
+    background-color:#f3a33a;
+}
+
+p{
+   font-size: 16px;
+   margin-top: 10px; 
+   color: #c47a42
+}
+
+#average, #result{
+    font-weight: bold; 
+    color:  #f8e9d7; 
+    background-color: #9e663c;  /* pale green LCD */
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+</style>
+
+</head>
+<body>
+    <div style="text-align: center;">
+    <img src="star.png" style="border-radius: 35px; width: 30%;">
+    <h2>Simple Capybara Calculator 🐾</h2>
+    </div>
+
+    <p style=" font-weight: bold;">🍃Score 1:</p>
+    <input id="score1" type="text">
+
+    <p style=" font-weight: bold;">🍃Score 2:</p>
+    <input id="score2" type="text">
+
+    <button py-click="compute_average">Compute Average</button>
+    <p style=" font-weight: bold;">🍊Average: <span id="average"></span></p>
+    <p style=" font-weight: bold;">🍊Status: <span id="result"></span></p>
+    <script type="py" src="main.py"></script>
+    <br>
+
+    <footer style="text-align: center; color: #9e663c; "><i>"Don't Worry, Be Capy." ⭐</i></footer>
+</body>
+</html>
